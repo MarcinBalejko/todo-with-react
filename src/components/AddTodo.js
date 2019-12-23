@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
+import { Button } from 'reactstrap';
 
 export class AddTodo extends Component {
     state = {
@@ -26,13 +27,15 @@ export class AddTodo extends Component {
                     value={this.state.title}
                     onChange={this.onChange}
                 />
-                <input
-                    type="submit"
-                    value="Submit"
-                    className="btn"
-                    style={{ flex: '1' }}
-                />
-            </form>
+                <Button>
+                    <input
+                        type="submit"
+                        value="Submit"
+                        className="btn"
+                        style={{ flex: '1' }}
+                    />
+                </Button>
+            </form >
         )
     }
 }

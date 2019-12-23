@@ -18,15 +18,20 @@ a {
   padding: 0 1rem;
 }
 
-.btn {
+/*.btn {
   display: inline-block;
   border: none;
   background: #555;
   color: #fff;
   padding: 7px 20px;
   cursor: pointer;
-}
+}*/
 
 .btn:hover {
   background: #666;
+  color: rgb(219, 212, 212);
+}
+
+.btn:focus {
+  outline: none;
 }
